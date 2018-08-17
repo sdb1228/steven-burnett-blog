@@ -9,9 +9,9 @@ export default ({ data }) => {
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <ReactDisqusThread
         shortname="steven-burnett-blog"
-        identifier="hey-bob-lets-talk-about-yarn"
-        title="Steven Burnett Blow"
-        url="http://therapeutic-cars.surge.sh/" />
+        identifier={post.frontmatter.title}
+        title="Steven Burnett Blog"
+        url="http://stevenburnett.info/" />
     </div>
   );
 };
