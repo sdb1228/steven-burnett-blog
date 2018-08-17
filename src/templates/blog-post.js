@@ -3,17 +3,15 @@ import ReactDisqusThread from "react-disqus-thread";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
-  console.log(window.location.href)
   return (
     <div>
       <h1>{post.frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <ReactDisqusThread
-      shortname="stevenburnett"
-      identifier="steven-burnett-blog"
-      title="Blog Comment Thread"
-      url={window.location.href}
-      category_id="123456" />
+        shortname="steven-burnett-blog"
+        identifier="hey-bob-lets-talk-about-yarn"
+        title="Steven Burnett Blow"
+        url="http://therapeutic-cars.surge.sh/" />
     </div>
   );
 };
