@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { siteMetadata } from "../../gatsby-config";
+import { withPrefix } from "gatsby-link";
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -18,7 +19,8 @@ const TemplateWrapper = ({ children }) => (
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
       <title>{siteMetadata.title}</title>
-      <link rel="icon" href="../assets/favicon.png" type="image/x-icon"/>
+      <link rel="icon" href="../assets/favicon.png" type="image/x-icon" />
+      <link rel="stylesheet" href={withPrefix("couch.css")} />
     </Helmet>
     {children()}
   </div>

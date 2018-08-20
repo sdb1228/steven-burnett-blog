@@ -8,9 +8,6 @@ import Portfolio from "../components/Portfolio";
 import Footer from "../components/Footer";
 
 export default () => {
-  if (typeof window !== 'undefined' && window.location.pathname === "/about/") {
-    require ("../assets/css/couch.css")
-  }
   return (
     <div>
       <Header />
@@ -19,5 +16,5 @@ export default () => {
       <Portfolio />
       <Footer />
     </div>
-  )
-}
+  );
+};
