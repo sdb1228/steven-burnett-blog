@@ -1,21 +1,23 @@
 import React from "react";
+import Link from "gatsby-link";
 
-export default ({ data }) =>
-  <div>
-    <h1>
-      About {data.site.siteMetadata.title}
-    </h1>
-    <p>
-      Soon to be about Steven Burnett
-    </p>
-  </div>
+import Header from "../components/Header";
+import About from "../components/About";
+import Resume from "../components/Resume";
+import Portfolio from "../components/Portfolio";
+import Footer from "../components/Footer";
 
-export const query = graphql`
-  query AboutQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+export default () => {
+  if (typeof window !== 'undefined' && window.location.pathname === "/about/") {
+    require ("../assets/css/couch.css")
   }
-`
+  return (
+    <div>
+      <Header />
+      <About />
+      <Resume />
+      <Portfolio />
+      <Footer />
+    </div>
+  )
+}
