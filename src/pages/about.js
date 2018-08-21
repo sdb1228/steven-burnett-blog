@@ -6,13 +6,11 @@ import About from "../components/About";
 import Resume from "../components/Resume";
 import Portfolio from "../components/Portfolio";
 import Footer from "../components/Footer";
+import "../assets/css/couch.css";
 
 export default () => {
-  if (typeof window !== 'undefined' && window.location.pathname === "/about/") {
-    require ("../assets/css/couch.css")
-  }
   return (
-    <div>
+    <div id="aboutPage">
       <Header />
       <About />
       <Resume />

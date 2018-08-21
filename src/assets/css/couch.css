@@ -33,235 +33,12 @@ e. Others
       HTML5 Doctor Reset - html5doctor.com/html-5-reset-stylesheet/
 /* ------------------------------------------------------------------ */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-   margin: 0;
-   padding: 0;
-   border: 0;
-   outline: 0;
-   font-size: 100%;
-   vertical-align: baseline;
-   background: transparent;
+.skills {
+  margin-left: 0;
 }
-
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-   display: block;
-}
-
-audio,
-canvas,
-video {
-   display: inline-block;
-}
-
-audio:not([controls]) {
-   display: none;
-   height: 0;
-}
-
-[hidden] { display: none; }
-
-code, kbd, pre, samp {
-   font-family: monospace, serif;
-   font-size: 1em;
-}
-
-pre {
-   white-space: pre;
-   white-space: pre-wrap;
-   word-wrap: break-word;
-}
-
-blockquote, q { quotes: &#8220 &#8220; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-   content: '';
-   content: none;
-}
-
-ins {
-   background-color: #ff9;
-   color: #000;
-   text-decoration: none;
-}
-
-mark {
-   background-color: #A7F4F6;
-   color: #555;
-}
-
-del { text-decoration: line-through; }
-
-abbr[title], dfn[title] {
-   border-bottom: 1px dotted;
-   cursor: help;
-}
-
-table {
-   border-collapse: collapse;
-   border-spacing: 0;
-}
-
-
-/* ------------------------------------------------------------------ */
-/* c. Default and Basic Styles
-      Adapted from:
-      Skeleton CSS Framework - http://www.getskeleton.com/
-      Typeplate Typographic Starter Kit - http://typeplate.com/
-/* ------------------------------------------------------------------ */
-
-/*  1. Basic  ------------------------------------------------------- */
-
-*,
-*:before,
-*:after {
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   box-sizing: border-box;
-}
-
-html {
-   font-size: 62.5%;
-   -webkit-font-smoothing: antialiased;
-}
-
-body {
-   background: #fff;
-   font-family: 'opensans-regular', sans-serif;
-   font-weight: normal;
-   font-size: 15px;
-   line-height: 30px;
-	color: #838C95;
-
-   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-	-webkit-text-size-adjust: 100%;
-}
-
-/*  2. Typography
-       Vertical rhythm with leading derived from 6
---------------------------------------------------------------------- */
-
-h1, h2, h3, h4, h5, h6 {
-   color: #313131;
-	font-family: 'opensans-bold', sans-serif;
-   font-weight: normal;
-}
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-h1 { font-size: 38px; line-height: 42px; margin-bottom: 12px; letter-spacing: -1px; }
-h2 { font-size: 28px; line-height: 36px; margin-bottom: 6px; }
-h3 { font-size: 22px; line-height: 30px; margin-bottom: 12px; }
-h4 { font-size: 20px; line-height: 30px; margin-bottom: 6px; }
-h5 { font-size: 18px; line-height: 30px; }
-h6 { font-size: 14px; line-height: 30px; }
-.subheader { }
-
-p { margin: 0 0 30px 0; }
-p img { margin: 0; }
-p.lead {
-   font: 19px/36px 'opensans-light', sans-serif;
-   margin-bottom: 18px;
-}
-
-/* for 'em' and 'strong' tags, font-size and line-height should be same with
-the body tag due to rendering problems in some browsers */
-em { font: 15px/30px 'opensans-italic', sans-serif; }
-strong, b { font: 15px/30px 'opensans-bold', sans-serif; }
-small { font-size: 11px; line-height: inherit; }
-
-/*	Blockquotes */
-blockquote {
-   margin: 30px 0px;
-   padding-left: 40px;
-   position: relative;
-}
-blockquote:before {
-   content: "\201C";
-   opacity: 0.45;
-   font-size: 80px;
-   line-height: 0px;
-   margin: 0;
-   font-family: arial, sans-serif;
-
-   position: absolute;
-   top:  30px;
-	left: 0;
-}
-blockquote p {
-   font-family: 'librebaskerville-italic', serif;
-   padding: 0;
-   font-size: 18px;
-   line-height: 36px;
-}
-blockquote cite {
-   display: block;
-   font-size: 12px;
-   font-style: normal;
-   line-height: 18px;
-}
-blockquote cite:before { content: "\2014 \0020"; }
-blockquote cite a,
-blockquote cite a:visited { color: #8B9798; border: none }
-
-/* ---------------------------------------------------------------------
-/*  Pull Quotes Markup
-/*
-    <aside class="pull-quote">
-		<blockquote>
-			<p></p>
-		</blockquote>
-	 </aside>
-/*
-/* --------------------------------------------------------------------- */
-.pull-quote {
-   position: relative;
-	padding: 18px 30px 18px 0px;
-}
-.pull-quote:before,
-.pull-quote:after {
-	height: 1em;
-	opacity: 0.45;
-	position: absolute;
-	font-size: 80px;
-   font-family: Arial, Sans-Serif;
-}
-.pull-quote:before {
-	content: "\201C";
-	top:  33px;
-	left: 0;
-}
-.pull-quote:after {
-	content: '\201D';
-	bottom: -33px;
-	right: 0;
-}
-.pull-quote blockquote {
+.project-image {
    margin: 0;
 }
-.pull-quote blockquote:before {
-   content: none;
-}
-
-/* Abbreviations */
-abbr {
-   font-family: 'opensans-bold', sans-serif;
-	font-variant: small-caps;
-	text-transform: lowercase;
-   letter-spacing: .5px;
-	color: gray;
-}
-abbr:hover { cursor: help; }
 
 /* drop cap */
 .drop-cap:first-letter {
@@ -283,124 +60,9 @@ hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 3
 
 a, a:visited {
    text-decoration: none;
-   outline: 0;
-   color: #11ABB0;
-
-   -webkit-transition: color .3s ease-in-out;
-   -moz-transition: color .3s ease-in-out;
-   -o-transition: color .3s ease-in-out;
-   transition: color .3s ease-in-out;
-}
-a:hover, a:focus { color: #313131; }
-p a, p a:visited { line-height: inherit; }
-
-
-/*  4. List  --------------------------------------------------------- */
-
-ul, ol { margin-bottom: 24px; margin-top: 12px; }
-ul { list-style: none outside; }
-ol { list-style: decimal; }
-ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
-ul.square { list-style: square outside; }
-ul.circle { list-style: circle outside; }
-ul.disc { list-style: disc outside; }
-ul ul, ul ol,
-ol ol, ol ul { margin: 6px 0 6px 30px; }
-ul ul li, ul ol li,
-ol ol li, ol ul li { margin-bottom: 6px; }
-li { line-height: 18px; margin-bottom: 12px; }
-ul.large li { }
-li p { }
-
-/* ---------------------------------------------------------------------
-/*  Stats Tab Markup
-
-    <ul class="stats-tabs">
-		<li><a href="#">[value]<b>[name]</b></a></li>
-	 </ul>
-
-    Extend this object into your markup.
-/*
-/* --------------------------------------------------------------------- */
-.stats-tabs {
-   padding: 0;
-   margin: 24px 0;
-}
-.stats-tabs li {
-	display: inline-block;
-	margin: 0 10px 18px 0;
-	padding: 0 10px 0 0;
-	border-right: 1px solid #ccc;
-}
-.stats-tabs li:last-child {
-	margin: 0;
-	padding: 0;
-	border: none;
-}
-.stats-tabs li a {
-	display: inline-block;
-	font-size: 22px;
-	font-family: 'opensans-bold', sans-serif;
-   border: none;
-   color: #313131;
-}
-.stats-tabs li a:hover {
-   color:#11ABB0;
-}
-.stats-tabs li a b {
-	display: block;
-	margin: 6px 0 0 0;
-	font-size: 13px;
-	font-family: 'opensans-regular', sans-serif;
-   color: #8B9798;
 }
 
-/* definition list */
-dl { margin: 12px 0; }
-dt { margin: 0; color:#11ABB0; }
-dd { margin: 0 0 0 20px; }
 
-/* Lining Definition Style Markup */
-.lining dt,
-.lining dd {
-	display: inline;
-	margin: 0;
-}
-.lining dt + dt:before,
-.lining dd + dt:before {
-	content: "\A";
-	white-space: pre;
-}
-.lining dd + dd:before {
-	content: ", ";
-}
-.lining dd:before {
-	content: ": ";
-	margin-left: -0.2em;
-}
-
-/* Dictionary Definition Style Markup */
-.dictionary-style dt {
-	display: inline;
-	counter-reset: definitions;
-}
-.dictionary-style dt + dt:before {
-	content: ", ";
-	margin-left: -0.2em;
-}
-.dictionary-style dd {
-	display: block;
-	counter-increment: definitions;
-}
-.dictionary-style dd:before {
-  .pagination {
-	content: counter(definitions, decimal) ". ";
-}
-
-/* Pagination */
-   margin: 36px auto;
-   text-align: center;
-}
 .pagination ul li {
    display: inline-block;
    margin: 0;
@@ -442,14 +104,6 @@ dd { margin: 0 0 0 20px; }
 }
 .pagination .prev, .pagination .next {}
 
-/*  5. Images  --------------------------------------------------------- */
-
-img {
-   max-width: 100%;
-   height: auto;
-}
-img.pull-right { margin: 12px 0px 0px 18px; }
-img.pull-left { margin: 12px 18px 0px 0px; }
 
 /*  6. Buttons  --------------------------------------------------------- */
 
@@ -826,8 +480,17 @@ properly.
 /* ------------------------------------------------------------------ */
 /* a. General Styles
 /* ------------------------------------------------------------------ */
+body{
+  margin:0;
+  padding:0;
+}
 
-body {
+#aboutPage {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+  overflow:auto;
   background: #0f0f0f;
 }
 

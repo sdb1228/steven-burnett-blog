@@ -19,7 +19,7 @@ const Portfolio = () => (
           <div className="columns portfolio-item">
             <div className="item-wrap">
               <a href="https://itunes.apple.com/us/app/pretty-random-random-number-generator/id1126199480?mt=8" title="">
-                <img alt="" src={Coffee} />
+                <img className="project-image" alt="" src={Coffee} />
                 <div className="overlay">
                   <div className="portfolio-item-meta">
                     <h5>Pretty Random</h5>
@@ -36,7 +36,7 @@ const Portfolio = () => (
           <div className="columns portfolio-item">
             <div className="item-wrap">
               <a href="https://www.amazon.com/Instructure-Canvas/dp/B073YNGXMR/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1534728676&sr=1-1&keywords=canvas" title="">
-                <img alt="" src={Console} />
+                <img className="project-image" alt="" src={Console} />
                 <div className="overlay">
                   <div className="portfolio-item-meta">
                     <h5>Alexa</h5>
@@ -53,7 +53,7 @@ const Portfolio = () => (
           <div className="columns portfolio-item">
             <div className="item-wrap">
               <a href="https://www.canvaslms.com/" title="">
-                <img alt="" src={Judah} />
+                <img className="project-image" alt="" src={Judah} />
                 <div className="overlay">
                   <div className="portfolio-item-meta">
                     <h5>Canvas-LMS</h5>
@@ -70,7 +70,7 @@ const Portfolio = () => (
           <div className="columns portfolio-item">
             <div className="item-wrap">
               <a href="https://github.com/sdb1228/SoccerLCMobile" title="">
-                <img alt="" src={IntoTheLight} />
+                <img className="project-image" alt="" src={IntoTheLight} />
                 <div className="overlay">
                   <div className="portfolio-item-meta">
                     <h5>SoccerLC</h5>
